@@ -1,9 +1,11 @@
 import React from 'react'
 
-import { Button } from './Button'
+//import { Button } from './Button'
 import { Buttonlink } from './Buttonlink'
 import './Footer.css'
 import { Link } from 'react-router-dom'
+
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 export default function Footer() {
   return (
@@ -16,11 +18,11 @@ export default function Footer() {
                 You can unsubscribe whenever.
             </p>
             <div className="input-areas">
-                <form>
-                    <input type="email" name="email" placeholder="Your Email" className="footer-input"/>
-                    <Button buttonStyle="btn--outline">Subscribe</Button>
-                </form>
-            </div>
+                <MailchimpSubscribe buttonStyle="btn--outline"  url={process.env.REACT_APP_MAILCHIMP_URL} />
+              </div>
+              <div>
+                  <p>Don't worry I am very lazy at content writing so you will not spammed at all, or a lot, ok may once in a year.</p>
+              </div>
         </section>
         <div className="footer-links">
             <div className="footer-link-wrapper">

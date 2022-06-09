@@ -9,19 +9,19 @@ export default function Cards() {
         <div classname="cards__wrapper">
             <ul className="cards__items">
                 <Carditem 
-                    img="../../images/img-9.jpg"
+                    img={process.env.PUBLIC_URL + "/images/img-9.jpg"}
                     text="Explore your country"
                     label="Adventure"
                     path="/services"
                 />
                 <Carditem 
-                    img="../../images/img-2.jpg"
+                    img={process.env.PUBLIC_URL + "/images/img-2.jpg"}
                     text="Explore your country"
                     label="Adventure"
                     path="/products"
                 />
                 <Carditem 
-                    img="../../images/img-3.jpg"
+                    img={process.env.PUBLIC_URL + "/images/img-3.jpg"}
                     text="Explore your country"
                     label="Adventure"
                     path="/services"
@@ -29,19 +29,19 @@ export default function Cards() {
             </ul>
             <ul className="cards__items">
                 <Carditem 
-                    img="../../images/img-9.jpg"
+                    img={process.env.PUBLIC_URL + "/images/img-5.jpg"}
                     text="Explore your country"
                     label="Adventure"
                     path="/services"
                 />
                 <Carditem 
-                    img="../../images/img-2.jpg"
+                    img={process.env.PUBLIC_URL + "/images/img-4.jpg"}
                     text="Explore your country"
                     label="Adventure"
                     path="/products"
                 />
                 <Carditem 
-                    img="../../images/img-3.jpg"
+                      img={process.env.PUBLIC_URL + "/images/img-1.jpg"}
                     text="Explore your country"
                     label="Adventure"
                     path="/services"

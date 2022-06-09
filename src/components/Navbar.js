@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 
 import { Button } from './Button'
 import './Navbar.css'
+import { GiMonkey } from "react-icons/gi";
 
 export default function Navbar() {
     const [click, setClick] = useState(false);
@@ -32,7 +33,8 @@ export default function Navbar() {
     <>
     <nav className="navbar">
         <div className="navbar-container">
-            <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>trvlSA  <i class="fa-solid fa-earth-africa"></i></Link>
+                  <Link to='/' className="navbar-logo" onClick={closeMobileMenu}><span className="thin-text">beat</span> <span className="thin-the">the</span><span>monkey</span> <span className="monkey-icon"><GiMonkey /></span> SEO</Link>
+
             <div className="menu-icon" onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>
