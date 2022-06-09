@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\components"
   ],
-  "SelectedNode": "\\E:\\__React\\travel-site",
+  "SelectedNode": "\\src\\components\\Footer.js",
   "PreviewInSolutionExplorer": false
 }
