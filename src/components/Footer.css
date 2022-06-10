@@ -72,6 +72,7 @@ section .footer-subscription, button:hover {
     font-size: 0.6em;
     padding: 8px;
     transform: rotate(-20deg);
+    text-decoration: underline;
 }
 
 .monkey-icon-footer {

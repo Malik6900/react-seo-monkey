@@ -33,7 +33,7 @@ export default function Navbar() {
     <>
     <nav className="navbar">
         <div className="navbar-container">
-                  <Link to='/' className="navbar-logo" onClick={closeMobileMenu}><span className="thin-text">beat</span>
+                  <Link to='/' className="navbar-logo" onClick={closeMobileMenu}><span className="thin-text strikethrough">spank</span>
                       <span className="thin-the">the</span><span>monkey</span> <span className="monkey-icon"><GiMonkey /></span> SEO</Link>
 
             <div className="menu-icon" onClick={handleClick}>

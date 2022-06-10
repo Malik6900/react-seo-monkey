@@ -26,13 +26,16 @@ export default function Footer() {
                   <p className="mail-chimp"><SiMailchimp /></p>
                   <p className="text-clr">eMail by MailChimp</p>
                   <p className="spam-msg">Don't worry I am a lazy content creator so you will not get spammed, maybe one or two emails a year.</p>
+
+                  
+
               </div>
         </section>
         <section className="social-media">
             <div className="social-media-wrap">
                 <div className="footer-logo">
                     <Link to="/" className="social-logo">
-                          <span className="thin-text-footer">beat</span>
+                          <span className="thin-text-footer">spank</span>
                           <span className="thin-the-footer">the</span>
                           <span>monkey</span>
                           <span className="monkey-icon-footer"><GiMonkey /></span>
