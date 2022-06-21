@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\components"
   ],
-  "SelectedNode": "\\E:\\__React\\seo",
+  "SelectedNode": "\\src\\components\\Navbar.js",
   "PreviewInSolutionExplorer": false
 }

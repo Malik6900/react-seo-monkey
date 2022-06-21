@@ -34,12 +34,13 @@ export default function Navbar() {
     <nav className="navbar">
         <div className="navbar-container">
                   <Link to='/' className="navbar-logo" onClick={closeMobileMenu}><span className="thin-text strikethrough">spank</span>
-                      <span className="thin-the">the</span><span>monkey</span> <span className="monkey-icon"><GiMonkey /></span> SEO</Link>
+                      <span className="thin-the">the</span><span className="monkey-txt-nav">monkey</span> <span className="monkey-icon"><GiMonkey /></span> SEO</Link>
 
             <div className="menu-icon" onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-            </div>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                  </div>
+            <div>
+            <ul className={click ? 'nav-menu active bg-color' : 'nav-menu'}>
                 <li className="nav-item">
                     <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                         Home
@@ -60,7 +61,8 @@ export default function Navbar() {
                         Sign Up
                     </Link>
                 </li>
-            </ul>
+             </ul>
+            </div>
             {button && <Button buttonStyle="btn--outline">Sign Up</Button>}
         </div>
     </nav>
