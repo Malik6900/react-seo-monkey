@@ -44,7 +44,7 @@ export default function Footer() {
                 </div>
                 <small className="website-rights">
                 <p class="d-caption copyright">
-                          beatthemonkey <GiMonkey /> SEO {new Date().getUTCFullYear()} © All Rights Reserved.
+                          spankthemonkey <GiMonkey /> SEO {new Date().getUTCFullYear()} © All Rights Reserved.
                 </p>
                 </small>
                 <div className="social-icons">
