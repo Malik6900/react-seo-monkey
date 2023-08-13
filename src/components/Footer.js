@@ -25,7 +25,7 @@ export default function Footer() {
               <div>
                   <p className="mail-chimp"><SiMailchimp /></p>
                   <p className="text-clr">eMail by MailChimp</p>
-                  <p className="spam-msg">Don't worry I am a lazy content creator so you will not get spammed, maybe one or two emails a year.</p>
+                  <p className="spam-msg">Don't worry you will not get spammed, maybe one or two emails a year.</p>
 
                   
 
@@ -48,9 +48,9 @@ export default function Footer() {
                 </p>
                 </small>
                 <div className="social-icons">
-                      <a href="https://facebook.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-                      <a href="https://twitter.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter fa-2x"></i></a>
-                      <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                      <a href="https://facebook.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook-f fa-1x"></i></a>
+                      <a href="https://twitter.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter fa-1x"></i></a>
+                      <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in fa-1x"></i></a>
                 </div>
             </div>
         </section>
