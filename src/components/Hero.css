@@ -5,10 +5,10 @@ video {
     position: fixed;
     z-index: -1;
   }
-  
-  .hero-container {
-    background: url('../../public/images/img-home.jpg') center center/cover no-repeat;
-    height: 100vh;
+
+.hero-container {
+    background: url('../../public/images/monkey-wp.jpg') center center/cover no-repeat;
+    height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,9 @@ video {
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
-  }
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
   
   .hero-container > h1 {
     color: #fff;
@@ -25,6 +27,8 @@ video {
   }
   
   .hero-container > p {
+    padding: 0 20px;
+    text-align: center;
     margin-top: 8px;
     color: #fff;
     font-size: 32px;

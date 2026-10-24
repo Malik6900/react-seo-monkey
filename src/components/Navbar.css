@@ -36,11 +36,11 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  width: 50vw;
   justify-content: end;
   margin-right: 2rem;
 }
@@ -63,12 +63,64 @@
   transition: all 0.2s ease-out;
 }
 
+.thin-text {
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.thin-the {
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size: 0.7em;
+    padding: 0 10px;
+    transform: rotate(-20deg);
+    text-decoration: underline;
+}
+/*
+.strikethrough {
+    position: relative;
+}
+
+    .strikethrough:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        right: 0;
+        border-top: 1px solid;
+        border-color: inherit;
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+        transform: rotate(-10deg);
+    }
+*/
+.monkey-icon {
+    margin-top: 30px;
+    padding: 10px;
+    color: orangered;
+    font-size: 3em;
+}
+
 .fa-bars {
   color: #fff;
 }
 
 .nav-links-mobile {
   display: none;
+}
+
+.nav-item--mobile-only {
+  display: none;
+}
+
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+  .nav-links {
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+  }
 }
 
 .menu-icon {
@@ -84,7 +136,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    padding-bottom: 90%;
     position: absolute;
     top: 80px;
     left: -100%;
@@ -98,6 +151,10 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+  }
+
+  .bg-color {
+
   }
 
   .nav-links {
@@ -114,10 +171,20 @@
   }
 
   .navbar-logo {
+    font-size: 1.25rem;
+  }
+
+  .monkey-icon {
+    margin-top: 0;
+    padding: 0 6px;
+    font-size: 2.2em;
+  }
+
+  .navbar-logo {
     position: absolute;
-    top: 0;
+    /*top: 0;*/
     left: 0;
-    transform: translate(25%, 50%);
+    /*transform: translate(25%, 50%);*/
   }
 
   .menu-icon {
@@ -133,6 +200,10 @@
   .fa-times {
     color: #fff;
     font-size: 2rem;
+  }
+
+  .nav-item--mobile-only {
+    display: block;
   }
 
   .nav-links-mobile {
@@ -154,5 +225,27 @@
     background: #fff;
     color: #242424;
     transition: 250ms;
+  }
+
+    .thin-text {
+        font-size: 0.6em;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        height: 100vh;
+        padding-bottom: 110%;
+    }
+}
+@media screen and (max-width: 400px) {
+  .navbar-logo {
+    font-size: 1.05rem;
+    margin-left: 12px;
   }
 }

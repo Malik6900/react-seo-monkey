@@ -1,53 +1,26 @@
 import React from 'react'
-import Carditem from './Carditem'
+import { Link } from 'react-router-dom'
 import './Card.css'
+import services from '../data/services'
 
 export default function Cards() {
   return (
     <div className="cards">
-        <h1>EXPLORE IT Now!! Short Left...</h1>
-        <div classname="cards__wrapper">
-            <ul className="cards__items">
-                <Carditem 
-                    img="../../images/img-9.jpg"
-                    text="Explore your country"
-                    label="Adventure"
-                    path="/services"
-                />
-                <Carditem 
-                    img="../../images/img-2.jpg"
-                    text="Explore your country"
-                    label="Adventure"
-                    path="/products"
-                />
-                <Carditem 
-                    img="../../images/img-3.jpg"
-                    text="Explore your country"
-                    label="Adventure"
-                    path="/services"
-                />
-            </ul>
-            <ul className="cards__items">
-                <Carditem 
-                    img="../../images/img-9.jpg"
-                    text="Explore your country"
-                    label="Adventure"
-                    path="/services"
-                />
-                <Carditem 
-                    img="../../images/img-2.jpg"
-                    text="Explore your country"
-                    label="Adventure"
-                    path="/products"
-                />
-                <Carditem 
-                    img="../../images/img-3.jpg"
-                    text="Explore your country"
-                    label="Adventure"
-                    path="/services"
-                />
-            </ul>
-        </div>
+        <h1>WHAT WE DO</h1>
+        <ul className="tiles">
+            {services.map((s) => {
+                const Icon = s.icon
+                return (
+                    <li className="tiles__item" key={s.slug}>
+                        <Link to={`/services#${s.slug}`} className="tiles__link">
+                            <span className="tiles__icon"><Icon /></span>
+                            <h2 className="tiles__title">{s.title}</h2>
+                            <p className="tiles__text">{s.tagline}</p>
+                        </Link>
+                    </li>
+                )
+            })}
+        </ul>
     </div>
   )
 }

@@ -1,0 +1,59 @@
+.how {
+  background: #242424;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.how h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.how__steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.how__step {
+  text-align: center;
+}
+
+.how__num {
+  display: inline-flex;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid orangered;
+  color: orangered;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+}
+
+.how__step h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.how__step p {
+  line-height: 1.5;
+  color: #d8d8d8;
+}
+
+@media screen and (max-width: 960px) {
+  .how__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .how__steps {
+    grid-template-columns: 1fr;
+  }
+}

@@ -17,8 +17,83 @@
     color: #fff;
 }
 
+section .footer-subscription, button {
+    padding: 10px 30px;
+    border-radius: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: #242424;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    font-size: 1.2em;
+}
+
+section .footer-subscription, input {
+    padding: 10px 30px;
+    border-radius: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #242424;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    font-size: 1.2em;
+}
+
+section .footer-subscription, button:hover {
+    padding: 10px 30px;
+    border-radius: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #242424;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+.mail-chimp {
+    margin-top: 30px;
+    font-size: 3em;
+    padding: 20px;
+    color: #FFE01B;
+}
+
+
+.thin-text-footer {
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.thin-the-footer {
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size: 0.6em;
+    padding: 8px;
+    transform: rotate(-20deg);
+    text-decoration: underline;
+}
+
+.monkey-icon-footer {
+    margin-top: 0px;
+    padding: 0 10px;
+    color: orangered;
+    font-size: 1.5em;
+}
+
+.text-clr {
+    color: #FFE01B;
+}
+
+.spam-msg {
+    padding: 20px;
+    font-family: 'Raleway';
+    font-size: 0.83em;
+}
+
 .footer-subscription > p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande'
 }
 
 .footer-subscription-heading {
@@ -27,8 +102,9 @@
 }
 
 .footer-subscription-text {
-    margin-bottom: 24px;
-    font-size: 20px;
+    padding: 20px;
+    font-weight: 100;
+    font-size: 1.50em;
 }
 
 .footer-input {
@@ -102,14 +178,19 @@ margin-bottom: 32px;
     width: 90%;
     max-width: 1920px;
     margin: 40px auto 0 auto;
+    gap: 1.5rem;
 }
 
 .social-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width: 110px;
     color: #fff !important;
+}
+
+.social-icons a {
+    color: #fff;
 }
 
 .social-logo {
@@ -129,11 +210,49 @@ margin-bottom: 32px;
     margin-bottom: 16px;
 }
 
+.footer-logo {
+    padding: 20px 0 0 0;
+}
+
 @media screen and (max-width: 820px) {
     .footer-links {
         padding-top: 2rem;
     }
     .footer-input {
         width: 100%;
+    }
+
+    .social-media-wrap {
+          flex-direction:column;
+        }
+}
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 821px) {
+    .website-rights {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .social-logo {
+        font-size: 1.4rem;
+        margin-left: 0;
     }
 }

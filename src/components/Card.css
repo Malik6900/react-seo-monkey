@@ -117,3 +117,70 @@
     }
   }
   
+/* Service tiles on the home page */
+.tiles {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1120px;
+  margin: 2.5rem auto 0;
+}
+
+.tiles__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem 1.6rem;
+  background: #fff;
+  border-radius: 10px;
+  border-top: 4px solid orangered;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  text-decoration: none;
+  transition: transform 0.2s linear;
+}
+
+.tiles__link:hover {
+  transform: translateY(-4px);
+}
+
+.tiles__icon {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #242424;
+  color: orangered;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tiles__title {
+  color: #252e48;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tiles__text {
+  color: #252e48;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .cards {
+    padding: 3rem 1.2rem;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+}
